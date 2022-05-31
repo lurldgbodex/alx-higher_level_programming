@@ -1,4 +1,4 @@
-nclude "lists.h"
+#include "lists.h"
 
 /**
  * check_cycle - checks to see if a list is in an endless loop or cycle
