@@ -2,4 +2,10 @@
 def best_score(a_dictionary):
     if not a_dictionary:
         return None
-    return max(a_dictionary)
+    max_score = 0
+    max_key = ''
+    for keys, value in a_dictionary:
+        if value > max_score:
+            max_score = value
+            max_key = key
+    return max_key
