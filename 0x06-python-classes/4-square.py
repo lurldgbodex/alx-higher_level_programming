@@ -3,15 +3,13 @@
 
 
 class Square:
-    """Class representation of a square.
-    private instance of attribute size
-    instantiation with optional size
-    public instance mehtod: def area(self):
-    """
+    """Class representation of a square."""
 
     def __init__(self, size=0):
         """Initialisation of size
-        and checks if size is of type int and is greater than zero"""
+        Args:
+            size (int): The size of the square
+        """
         self.__size = size
         
     @property
