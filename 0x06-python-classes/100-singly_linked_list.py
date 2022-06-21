@@ -6,7 +6,11 @@ class Node:
     """Represent a node in a singly-linked list."""
 
     def __init__(self, data, next_node=None):
-        """Initialize a new Node."""
+        """Initialize a new Node.
+        Args:
+            data (int): The data of the new Node.
+            next_node (Node): The next node of the new Node.
+        """
         self.data = data
         self.next_node = next_node
 
@@ -69,4 +73,4 @@ class SinglyLinkedList:
         while tmp is not None:
             values.append(str(tmp.data))
             tmp = tmp.next_node
-        return ('\n'.join(values)
+        return ('\n'.join(values))
