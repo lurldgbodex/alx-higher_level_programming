@@ -42,7 +42,6 @@ class Square:
 
     @position.setter
     def position(self, value):
-        """Sets the private position attributes"""
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
@@ -51,10 +50,10 @@ class Square:
         self.__position = value
 
     def area(self):
-        """Returns the current square area"""
-        return (self.__size ** 2)
+        """Return the current area of the square."""
+        return (self.__size * self.__size)
 
-     def my_print(self):
+    def my_print(self):
         """Print the square with the # character."""
         if self.__size == 0:
             print("")
