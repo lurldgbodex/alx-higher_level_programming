@@ -14,12 +14,11 @@ class Square:
 
     @property
     def size(self):
-        """Retrieves and return the current size of the square."""
+        """Get/set the current size of the square."""
         return (self.__size)
 
     @size.setter
     def size(self, value):
-        """Sets the value of size"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -28,28 +27,28 @@ class Square:
 
     def area(self):
         """Return the current area of the square."""
-        return (self.__size ** 2)
+        return (self.__size * self.__size)
 
-    def __equal__(self, other):
+    def __eq__(self, other):
         """Define the == comparision to a Square."""
         return self.area() == other.area()
 
-    def __notequal__(self, other):
+    def __ne__(self, other):
         """Define the != comparison to a Square."""
         return self.area() != other.area()
 
-    def __lessthan__(self, other):
+    def __lt__(self, other):
         """Define the < comparison to a Square."""
         return self.area() < other.area()
 
-    def __lessequal__(self, other):
+    def __le__(self, other):
         """Define the <= comparison to a Square."""
         return self.area() <= other.area()
 
-    def __greaterthan__(self, other):
+    def __gt__(self, other):
         """Define the > comparison to a Square."""
         return self.area() > other.area()
 
-    def __greaterequal__(self, other):
+    def __ge__(self, other):
         """Define the >= compmarison to a Square."""
         return self.area() >= other.area()
