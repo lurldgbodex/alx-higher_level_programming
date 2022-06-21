@@ -2,9 +2,7 @@
 """Define a class"""
 
 class Square:
-    """Class representation of a square.
-    private instance attribute of size instantiated to value of zero
-    """
+    """Class representation of a square."""
 
     def __init__(self, size):
         """__init__ function for initialisation of size"""
