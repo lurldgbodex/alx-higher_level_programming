@@ -18,8 +18,8 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """Initialisation of size
         and checks if size is of type int and is greater than zero"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
