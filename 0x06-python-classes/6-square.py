@@ -54,18 +54,14 @@ class Square:
         """Returns the current square area"""
         return (self.__size ** 2)
 
-    def my_print(self):
-        """prints in stdout the square with character #
-        at the position given by position attribute"""
+     def my_print(self):
+        """Print the square with the # character."""
         if self.__size == 0:
-            print('')
+            print("")
             return
-        
-        for i in range(0, self.__position[1]):
-            print('')
-        for x in range(0, self.__size):
-            for y in range(0, self.__position[0]):
-                print(" ", end="")
-            for j in range(0, self.__size):
-                print("#", end="")
-        print('')
+
+        [print("") for i in range(0, self.__position[1])]
+        for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            print("")
