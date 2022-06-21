@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define a class"""
 
+
 class Square:
     """Class representation of a square.
     private instance of attribute size
@@ -58,10 +59,12 @@ class Square:
         at the position given by position attribute"""
         if self.__size == 0:
             print('')
+            return
+        
         for i in range(0, self.__position[1]):
             print('')
         for x in range(0, self.__size):
-            for y in range(0, self.__position):
+            for y in range(0, self.__position[0]):
                 print(" ", end="")
             for j in range(0, self.__size):
                 print("#", end="")
