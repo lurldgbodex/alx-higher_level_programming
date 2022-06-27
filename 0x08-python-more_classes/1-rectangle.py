@@ -24,7 +24,7 @@ class Rectangle:
         sets the value of the width property
         :param value: parameter that takes the width argument
         """
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -44,7 +44,7 @@ class Rectangle:
         sets the value of height
         :param value: the value to set
         """
-        if type(value) is not int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
