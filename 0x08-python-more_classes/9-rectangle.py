@@ -119,12 +119,12 @@ class Rectangle:
             return rect_1
         if rect_1.area() < rect_2.area():
             return rect_2
-        
+
     @classmethod
     def square(cls, size=0):
         """
         Creates a new rectangle instance with width == height == size
         :param size: size to set the new rectangle
-        :return: the new rectangle instance 
+        :return: the new rectangle instance
         """
         return cls(size, size)
