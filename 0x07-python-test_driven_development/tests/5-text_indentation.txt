@@ -1,0 +1,51 @@
+==================================
+The ``5-text_indentation`` module
+==================================
+
+Using ``text-indentation``
+---------------------------
+
+Import the function:
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Now test it:
+
+    >>> text_indentation("Hello.")
+    Hello.
+    <BLANKLINE>
+
+    >>> text_indentation("""Lorem ipsum dolor? sit amet, consectetur: adipiscing elit.""")
+    Lorem ipsum dolor?
+    <BLANKLINE>
+    sit amet, consectetur:
+    <BLANKLINE>
+    adipiscing elit.
+    <BLANKLINE>
+
+    >>> text_indentation(".    : ?")
+    .
+    <BLANKLINE>
+    :
+    <BLANKLINE>
+    ?
+    <BLANKLINE>
+
+    >>> text_indentation("Welcome")
+    Welcome
+
+    >>> text_indentation(9)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+    >>> text_indentation("Hello\n\nThere.")
+    Hello
+    <BLANKLINE>
+    There.
+    <BLANKLINE>
+
+    >>> text_indentation("")
+
+    >>> text_indentation()
+    Traceback (most recent call last):
+    TypeError: text_indentation() missing 1 required positional argument: 'text'
