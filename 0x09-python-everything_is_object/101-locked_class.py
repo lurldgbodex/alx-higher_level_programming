@@ -11,6 +11,6 @@ class LockedClass:
     __slots__ = ['first_name']
 
 
-    def __init__(self, first_name=):
+    def __init__(self, first_name):
     """"A method that instances the firstname attribute"""
         self.first_name = first_name
