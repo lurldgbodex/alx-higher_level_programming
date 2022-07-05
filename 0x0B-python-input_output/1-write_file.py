@@ -15,7 +15,7 @@ def number_of_lines(filename=""):
 
     with open(filename) as f:
         text = f.readlines()
-        for _ in text:
+        for word in text:
             count += 1
 
     return count
