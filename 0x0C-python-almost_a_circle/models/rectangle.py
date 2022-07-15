@@ -83,9 +83,11 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
-        """Returns a string rep. of a rectangle instance"""
-        str_rep = "[Rectangle] () {}/{} - {}/{}".format(self.id, self.__x, self.__y, self.__width, self.__height)
-        return str_rep
+        """Returns a string representation of a Rectangle instance."""
+
+        s = "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.__x, self.__y, self.__width, self.__height)
+        return s
 
     def update(self, *args, **kwargs):
         """
